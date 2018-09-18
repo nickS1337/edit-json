@@ -5,7 +5,7 @@ var test_json = {
 		"asd": "asd",
 		"dsa": "dsa"
 	},
-	"test1": []
+	"test1": ["asdfgh"]
 }
 
 edit = function(data){
@@ -23,7 +23,7 @@ edit = function(data){
 	
 		console.log("keys in " + primary_keys[i] + ": " + secondary_keys);
 		
-		if (Array.isArray(primary_keys[i])){
+		if (primary_keys[i] instanceof Array){
 			//Cycle through the array.
 			console.log(primary_keys[i] + " is an array");
 		}
